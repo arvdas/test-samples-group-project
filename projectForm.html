@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Form</title>
+    <style>
+        button {
+
+            margin: 20px;
+            width: 80px;
+            border-radius: 4px;
+            height: 30px;
+            color: white;
+            font-size: 18px;
+            border: none;
+            background-color: rgb(175, 102, 243);
+
+
+        }
+
+        input[type=text] {
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        input[type=number] {
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        input[type=email] {
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        .img {
+            width: 50%;
+            height: 775px;
+            float: right;
+        }
+
+        #Lab-form {
+            padding: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <form action="" id="Lab-form">
+            <img class="img" src="lab-test.jpg" alt="lab test" />
+            <h1>1.Your Contact Details</h1>
+            <input type="text" title="name" placeholder="Full Name" required>
+
+            <input type="number" title="patient_id" placeholder="Patient Id if exists" required>
+            <br>
+            <input type="number" title="Contact_no" placeholder="Phone Number" required>
+
+            <input type="email" title="email" placeholder="Email Id" required>
+            <br>
+            <h1>2.Address</h1>
+            <input type="number" title="H.no" placeholder="H.No" required>
+            <input type="text" title="Street" placeholder="Street" required>
+            <br>
+            <input type="text" title="Area" placeholder="Area" required>
+            <br>
+            <h4>District</h4>
+
+            <select name="district">
+                <option value="Choose" selected>Choose</option>
+                <option value="district 1">District 1</option>
+                <option value="district 2">District 2</option>
+                <option value="district 3">District 3</option>
+            </select>
+
+            <input type="submit">
+            <br>
+            <h1>Choose the Test Type</h1>
+            <p>(Check atleast one box without fail)</p>
+
+            <input type="checkbox" id="test 1" name="test 1" value="CBC">
+            <label for="test 1">CBC</label><br>
+            <input type="checkbox" id="test 2" name="test 2" value="Complete Urine">
+            <label for="test 2">Complete Urine</label><br>
+            <input type="checkbox" id="test 3" name="test 3" value="Lipid Profile">
+            <label for="test 3">Lipid Profile</label><br>
+            <input type="checkbox" id="test 4" name="test 4" value="Thyroid Stimulating Hormone(TSH)">
+            <label for="test 4">Thyroid Stimulating Hormone(TSH)</label><br>
+            <input type="checkbox" id="test 5" name="test 5" value="Glucose Test">
+            <label for="test 5">Glucose Test</label>
+            <h1>Do you want a hard copy of the report also?</h1>
+            <input type="radio" id="yes" name="answer" value="yes">
+            <label for="html">Yes</label><br>
+            <input type="radio" id="no" name="answer" value="no">
+            <label for="css">No</label><br>
+
+            <label for="testtime">
+                <h1>Select Your Comfortable Date and Time:</h1>
+            </label>
+            <input type="datetime-local" id="testtime" name="testtime">
+
+
+
+
+
+        </form>
+    </div>
+    <button form="Lab-form">Reset</button>
+    <button form="Lab-form">Submit</button>
+
+</body>
