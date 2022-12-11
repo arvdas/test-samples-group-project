@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navigate {
+            background-color: rgba(192, 192, 192, 0.995);
+            position: sticky;
+        }
+
+        body {
+            margin: 0%;
+        }
+
+        .menu {
+            margin: 0%;
+            background-color: rgb(0, 0, 0, 0.5);
+        }
+
+        .menu li {
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .menu li:hover {
+            background-color: rgb(0, 0, 0, 0.7);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu li:nth-child(2):hover #Dropdown_1,
+        .menu li:nth-child(3):hover #Dropdown_2 {
+            display: block;
+        }
+
+        #Dropdown_1,
+        #Dropdown_2 {
+            position: absolute;
+            width: auto;
+            max-width: 150px;
+            display: none;
+            top: 42.5px;
+            background-color: whitesmoke;
+            padding: 0%;
+        }
+
+        #Dropdown_1 li,
+        #Dropdown_2 li {
+            display: block;
+
+        }
+
+        #Dropdown_1 li:hover,
+        #Dropdown_2 li:hover {
+            background-color: gainsboro;
+        }
+
+        #Dropdown_1 li a,
+        #Dropdown_2 li a {
+            color: steelblue;
+            font-size: 16px;
+        }
+
+        div header {
+            background-color: grey;
+            color: white;
+            margin: 0%;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+
+            margin: 0%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #slider {
+            height: 400px;
+            margin: 10px;
+            animation-name: slide;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+
+        }
+
+
+        @keyframes slide {
+            0% {
+                background-image: url(ani1.jpg);
+                background-size: 100% 400px;
+                border: 5px solid steelblue;
+                background-repeat: no-repeat;
+                animation-delay: 5s;
+            }
+
+            25% {
+                background-image: url(ani2.png);
+                background-repeat: no-repeat;
+                background-size: 100% 400px;
+                border: 5px solid steelblue;
+                animation-delay: 5s;
+            }
+
+            50% {
+                background-image: url(ani3.jpg);
+                background-repeat: no-repeat;
+                border: 5px solid steelblue;
+                background-size: 100% 400px;
+                animation-delay: 5s;
+            }
+
+            75% {
+                background-image: url(ani4.jpg);
+                background-repeat: no-repeat;
+                border: 5px solid steelblue;
+                background-size: 100% 400px;
+                animation-delay: 5s;
+            }
+
+            100% {
+                background-image: url(ani5.jpg);
+                background-repeat: no-repeat;
+                border: 5px solid steelblue;
+                background-size: 100% 400px;
+                animation-delay: 5s;
+            }
+
+        }
+        .products p{
+            color: blue;
+
+        }
+        
+        .products {
+    position: relative;
+	width: 100%;
+	
+    padding-bottom: 50%;	
+    height: 100%;
+    background-color: lightblue;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  img {
+     width: 100%;
+     position: relative;
+     top: -10px;
+     
+    
+	 
+  }
+  
+  button{
+    position: absolute;
+	padding: 16px;
+	background-color:lightblue;
+	border-radius: 16px;
+	bottom: 10px;
+	left: 0px;
+	width: 100%;
+    bottom: -2px;
+ color: orangered;
+ font-size: large;
+ padding-bottom: 5px;
+  }
+  button:focus{
+    border-color: rgb(0, 255, 76);
+    background-color: rgb(250, 234, 230) ;
+  }
+  .pics{
+    list-style: none;
+  }
+  .pics li{
+    display: inline-block;
+    margin: 50px;
+    width: 15%;
+    height: -10px;
+  }
+   li:hover img {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .pics li img {
+        width: 225px;
+        height: 125px;
+        display: block;
+    }
+    .container{
+        padding: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Pharmacy</h1>
+        </header>
+        <nav id="navigate">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Our Medicines</a>
+                    <ul id="Dropdown_1">
+                        <li><a href="#">Fever</a></li>
+                        <li><a href="#">Muscle Pain</a></li>
+                        <li><a href="#">Cold and Cough</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Health Care</a>
+                    <ul id="Dropdown_2">
+                        <li><a href="#">Baby Care</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Home Care</a></li>
+                        <li><a href="#">Personal Care</a></li>
+                        <li><a href="#">Pet Care</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href="projectForm.html">Lab Test</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div id="slider">
+    </div>
+    <section class="container">
+        <h2>Covid Care</h2>
+        <ul class="pics">
+            <li>
+        <article>
+            <div class="products">
+                <h3>Covid Test Kit</h3>
+                <img src="c1.jpg" alt="Test Kit">
+                <p>Rs.40</p>
+                <p>Offer Rs.30/-</p>
+                <button class="btn">Add To Cart</button>
+            </div>
+        </article>
+            </li>
+            <li>
+        <article>
+            <div class="products">
+                <h3>Covid Essentials</h3>
+                <img src="c2.jpg" alt="Test Kit">
+                <p>Rs.240</p>
+                <p>Offer Rs.170/-</p>
+                <button class="btn">Add To Cart</button>
+            </div>
+        </article>
+        </li>
+        <li>
+        <article>
+            <div class="products">
+                <h3>Sanitizer Bottle</h3>
+                <img src="c3.jpg" alt="Test Kit">
+                <p>Rs.99</p>
+                <p>Offer Rs.87/-</p>
+                <button class="btn">Add To Cart</button>
+            </div>
+        </article>
+        </li>
+        <li>
+        <article>
+            <div class="products">
+                <h3>Mask</h3>
+                <img src="c4.jpg" alt="Test Kit">
+                <p>Rs.45</p>
+                <p>Offer Rs.30/-</p>
+                <button class="btn">Add To Cart</button>
+            </div>
+        </article>
+        </li>
+        </ul>
+    </section>
+    <section class="container">
+        <h2>Diabetes Care</h2>
+        <ul class="pics">
+            <li>
+        <article>
+            <div class="products">
+                <h3>Mask</h3>
+                <img src="d1.jpg" alt="Test Kit">
+                <p>Rs.45</p>
+                <p>Offer Rs.30/-</p>
+                <button class="btn">Add To Cart</button>
+            </div>
+        </article>
+            </li>
+            <li>
+        <article>
+            <div class="products">
+                <h3>Mask</h3>
+                <img src="d2.jpg" alt="Test Kit">
+                <p>Rs.45</p>
+                <p>Offer Rs.30/-</p>
+                <button class="btn">Add To Cart</button>
+            </div>
+        </article>
+        </li>
+        <li>
+        <article>
+            <div class="products">
+                <h3>Mask</h3>
+                <img src="d3.jpg" alt="Test Kit">
+                <p>Rs.45</p>
+                <p>Offer Rs.30/-</p>
+                <button class="btn">Add To Cart</button>
+            </div>
+        </article>
+        </li>
+        <li>
+        <article>
+            <div class="products">
+                <h3>Mask</h3>
+                <img src="d4.png" alt="Test Kit">
+                <p>Rs.35</p>
+                <p>Offer Rs.30/-</p>
+                <button class="btn">Add To Cart</button>
+            </div>
+        </article>
+        </li>
+        </ul>
+    </section>
+    <div class="footer">
+        <h4>@copyright. Only for demonstration purposes </h4>
+    </div>
+
+</body>
+
+</html>
